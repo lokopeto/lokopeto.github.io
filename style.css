@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #FFC300;
+    background-image: url(background/background1.svg);
+    background-repeat:repeat-x;
 }
 
 h1, p {
@@ -17,13 +18,14 @@ h1, p {
 h1 {
     height: 10px;
     padding-bottom: 30px;
-    margin-top: 7px;
+    margin-top: -20px;
     font: 900 7em 'Poppins'
 }
 
 p {
-    padding-left: 420px;
-    font: italic 300 2em 'Poppins'
+    position: relative;
+    margin-left: 420px;
+    font: italic 300 2em 'Poppins';
 }
 
 h2 {
