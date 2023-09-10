@@ -8,23 +8,25 @@ body {
     background-color: #FFC300;
 }
 
-h1 {
-    text-align: center;
+h1, p {
     color: white;
-    font-size: 700%;
-    height: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 150px;
+    height: 10px;
+    padding-bottom: 30px;
 }
 
 p {
-    text-align: center;
-    color: white;
-    font-size: 120%;
-    padding-left: 250px;
+    font-size: 30px;
+    padding-left: 370px;
 }
 
 h2 {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: white;
     border-radius: 10px;
     width: fit-content;
