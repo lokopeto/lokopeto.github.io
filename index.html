@@ -21,6 +21,31 @@
 
         <h2>Demos Músicais</h2>
 
+        <div id="video-container"></div>
+
+        <script>
+          // Replace the URL below with the path to your "videos" directory on the server
+          const videoDirectoryURL = '/videos/demos/';
+      
+          fetch(videoDirectoryURL)
+            .then(response => response.text())
+            .then(data => {
+              const videoFiles = data.split('\n').filter(file => file.trim() !== '');
+      
+              const videoContainer = document.getElementById('video-container');
+              videoFiles.forEach(videoFile => {
+                const videoElement = document.createElement('video');
+                videoElement.src = videoDirectoryURL + videoFile;
+                videoElement.controls = true;
+                videoElement.style.display = 'block';
+                videoElement.style.marginBottom = '20px';
+                videoContainer.appendChild(videoElement);
+              });
+            })
+            .catch(error => {
+              console.error('Error fetching video list:', error);
+            });
+        </script>
     </main>
 </body>
 </html>
